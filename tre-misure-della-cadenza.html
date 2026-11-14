@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cicli al minuto, colli all'ora, pallet all'ora: tre numeri per la stessa macchina</title>
+<meta name="description" content="Cicli al minuto, colli all'ora e pallet all'ora non sono sinonimi: misurano robot, linea e logistica. Come convertirli senza farsi ingannare dalle schede tecniche, tra presa multipla, cambio pallet e cadenza efficace.">
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.65; color: #222; max-width: 720px; margin: 0 auto; padding: 24px 18px 48px; background: #fdfdfa; }
+  h1 { font-size: 1.75em; line-height: 1.25; margin-bottom: 0.4em; }
+  h2 { font-size: 1.25em; margin-top: 1.6em; }
+  .data { color: #777; font-size: 0.9em; margin-bottom: 1.8em; }
+  a { color: #1a5fb4; }
+  blockquote { border-left: 3px solid #ccc; margin: 1.2em 0; padding: 0.2em 0 0.2em 1em; color: #444; }
+  .altri { border-top: 1px solid #ccc; margin-top: 2.4em; padding-top: 1em; }
+</style>
+</head>
+<body>
+
+<h1>Cicli al minuto, colli all'ora, pallet all'ora: tre numeri per la stessa macchina</h1>
+<p class="data">Appunti di campo &middot; novembre 2026</p>
+
+<p>Metti sul tavolo le schede tecniche di tre pallettizzatori e prova a confrontare la velocità: uno dichiara 12 cicli al minuto, il secondo 2.400 colli all'ora, il terzo 25 pallet all'ora. Sembrano tre macchine di tre categorie diverse. A volte sono la stessa macchina descritta in tre lingue diverse — e il confronto in gara si vince o si perde proprio lì, nella conversione che nessuno fa. Questo appunto mette in fila le tre unità, dice cosa misura ciascuna e mostra dove si nascondono le differenze vere tra un numero di catalogo e la cadenza che vedrai in produzione.</p>
+
+<h2>Tre unità, tre oggetti diversi</h2>
+
+<p>Il <strong>ciclo al minuto</strong> misura i movimenti dell'organo di presa: quante volte in un minuto la pinza prende, trasferisce e deposita. È il numero del robot, e non dice quanti colli si sono mossi: dice quante corse ha fatto. I <strong>colli all'ora</strong> misurano il prodotto: quante scatole, sacchi o fusti sono finiti sul pallet in un'ora. È il numero della linea, quello che si confronta con la cadenza di chi sta a monte. I <strong>pallet all'ora</strong>, infine, misurano la logistica: quanti pallet completi l'isola consegna al magazzino. È il numero che interessa a chi deve dimensionare carrellisti, avvolgitori e corsie di uscita.</p>
+
+<p>Le tre misure sono legate da due moltiplicatori: quanti colli prende la pinza a ogni ciclo, e quanti colli stanno su un pallet. Cambia uno dei due e la stessa macchina cambia numero senza cambiare velocità. È la ragione per cui i confronti seri, nell'<a href="https://it.wikipedia.org/wiki/Automazione_industriale">automazione industriale</a> come altrove, si fanno sempre dopo aver fissato collo, schema di carico e altezza del pallet: prima le condizioni, poi i numeri.</p>
+
+<h2>La presa multipla: il moltiplicatore silenzioso</h2>
+
+<p>Un pallettizzatore da 10 cicli al minuto con presa singola muove 600 colli all'ora. La stessa macchina con una testa che prende quattro colli per corsa ne muove 2.400, a parità di cicli. Ecco perché le schede dei cartesiani in configurazione multi-testa arrivano a dichiarare 4.000–6.000 cicli/ora equivalenti in colli, mentre la meccanica sottostante fa le stesse corse di sempre: il salto sta nella testa, non negli assi.</p>
+
+<p>Il rovescio della medaglia: la presa multipla richiede colli raggruppati e orientati a monte, quindi un sistema di formazione del gruppo che ha i suoi tempi e le sue tolleranze. E quando lo schema di carico prevede l'interfoglio tra uno strato e l'altro, il ciclo di posa del foglio è un ciclo che non muove colli: nei conti onesti va messo, perché in produzione c'è. Chi confronta due offerte deve chiedere sempre se il numero dichiarato è a presa singola o multipla, e se gli strati dichiarati includono gli interfogli. Sono due domande da trenta secondi che smontano metà dei confronti truccati.</p>
+
+<h2>Il tempo ciclo si scompone, e le attese si sommano</h2>
+
+<p>Il ciclo singolo si può scomporre in quattro tempi: presa, trasferimento carico, deposito, ritorno a vuoto. Sommati danno il tempo ciclo meccanico; divisi nei 3.600 secondi di un'ora danno i cicli/ora teorici. I costruttori seri applicano a quel numero un fattore di prudenza — nelle stime di cella si usa tipicamente tra 1,1 e 1,2 — per tenere dentro accelerazioni reali, assestamenti e micro-attese di consenso tra le macchine. Un ciclo da 5 secondi nominali, corretto con 1,15, diventa 5,75 secondi veri: i cicli al minuto passano da 12 a poco più di 10 senza che la macchina sia "più lenta" — è solo il conto fatto bene.</p>
+
+<p>Sopra i cicli, poi, si ammortizza il resto dell'isola. Il cambio pallet — uscita del pieno, ingresso del vuoto, riposizionamento — vale tipicamente dai 10 ai 30 secondi a seconda dell'automazione, e si ripete a ogni pallet: su un pallet da otto strati con presa singola è un'inezia percentuale, su pallet bassi e cicli veloci può valere il 5–8% della cadenza oraria. È il motivo per cui la cadenza efficace non coincide mai con quella nominale, e per cui il dimensionamento corretto si fa sulla cadenza di picco della linea con un margine del 10–15%, non sulla media dichiarata dal commerciale.</p>
+
+<h2>Leggere gli ordini di grandezza</h2>
+
+<p>Per orientarsi tra le famiglie: un robot antropomorfo da pallettizzazione viaggia tipicamente tra gli 800 e i 2.000 cicli/ora equivalenti a seconda di peso e schema; un cartesiano a portale, specie in multi-testa e su prodotto omogeneo, sta sopra, fino ai 4.000–6.000 colli/ora delle configurazioni spinte; i pallettizzatori a strato si misurano in un'altra unità ancora — 10–35 strati all'ora — che non si confronta con le altre senza passare dai colli per strato; i cobot di pallettizzazione stanno intorno ai 700 cicli/ora e giocano un'altra partita, quella della flessibilità nelle piccole serie. Numeri di picco, tutti: utili per scartare le macchine fuori scala, inutili per scegliere tra due macchine in scala. Lì decidono le condizioni al contorno: peso reale del collo, corse vere dell'isola, numero di cambi formato per turno.</p>
+
+<h2>La misura che non mente: il turno intero</h2>
+
+<p>C'è un controllo che chiude tutte le discussioni sulle conversioni, e non richiede strumenti: contare i pallet completi usciti dall'isola in un turno intero e dividerli per le ore effettive di marcia. Quel numero — la cadenza efficace di turno — incorpora da solo cambi pallet, micro-attese, interfogli, cambi formato e la fisiologia della linea a monte. Se un impianto dichiara 20 pallet all'ora e a fine turno ne ha consegnati in media 15,5, la distanza tra i due numeri non è un difetto della macchina: è la fotografia del sistema. E quando si progetta l'ampliamento o la sostituzione, è dai 15,5 che si parte, non dai 20: dimensionare sulla cadenza di targa significa comprare due volte la stessa sorpresa.</p>
+
+<h2>Il conto da fare prima di firmare</h2>
+
+<p>La procedura che consiglio è sempre la stessa. Primo: fissare i dati della propria linea — colli all'ora di picco, peso e dimensioni del collo, schema e altezza pallet, interfogli sì o no. Secondo: convertire ogni offerta nelle tre unità con gli stessi moltiplicatori, applicando il fattore di prudenza e ammortizzando il cambio pallet. Terzo: chiedere al fornitore, per iscritto, a quali condizioni il numero dichiarato è stato misurato. Chi vuole il metodo completo, con gli esempi svolti sui dati di una linea vera, lo trova nella spiegazione di <!-- SETTLE-INSERIMENTO: trasformare in link a WP #21 (https://robotcartesiani.wordpress.com/2026/11/06/velocita-di-pallettizzazione-come-calcolare-i-cicli-al-minuto/) il testo "come si calcolano i cicli al minuto di un pallettizzatore" -->come si calcolano i cicli al minuto di un pallettizzatore<!-- /SETTLE-INSERIMENTO --> partendo dalla cadenza che serve, non da quella del catalogo.</p>
+
+<p>Perché alla fine la domanda giusta non è "quanto è veloce questa macchina", ma "quanti pallet completi consegna la mia isola alle sei di sera". Le tre unità servono a non confondere le due cose.</p>
+
+<div class="altri">
+<p><strong>Altri appunti</strong></p>
+<ul>
+<li><a href="fermi-linea-fine-linea.html">I fermi che non lasciano traccia: micro-stop e fine linea</a></li>
+<li><a href="indice-appunti.html">Indice degli appunti</a></li>
+</ul>
+</div>
+
+</body>
+</html>
